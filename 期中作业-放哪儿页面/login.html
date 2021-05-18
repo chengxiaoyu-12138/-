@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>登陆页面</title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+				font-family: "arial black";
+			}
+			
+			html,body{
+				/*1280*720 高清 1920*1080 超清*/
+				background-image: url(img/bg.jpeg);
+				background-size: 100% 100%;
+				height: 100%;
+			}
+			
+			.login{
+				background-color: rgba(255,255,255,.8);
+				/*div一般不能设置高度 设置绝对位置*/
+				top:25%;
+				bottom: 25%;
+				left: 70%;
+				right: 10%;
+				position: absolute;
+				/*设置圆角*/
+				border-radius: 5px;
+			}
+
+			
+			button{
+				background-color: #579572;
+				width: 40%;
+				height: 40px;
+				border: 0;/*描边*/
+				border-radius: 5px;
+			}
+			
+			input{
+				height: 35px;
+				border: 0;/*描边*/
+				border-radius: 5px;
+				width: 80%;
+				text-align: center;
+				padding-left: 20px;
+				box-sizing: border-box;
+			}
+			
+			.un{
+				/*no-repeat 图标不重复*/
+				background: url(img/1.png) no-repeat left;
+				background-size: 20px,auto;
+				background-color: #F2F2FA;
+			}
+			.pa{
+				/*no-repeat 图标不重复*/
+				background: url(img/2.png) no-repeat left;
+				background-size: 20px,auto;
+				background-color: #F2F2FA;
+			}
+			
+			.title,.uname,.pwd,.log,.tips{
+				width: 100%;
+				position: absolute;
+			}
+			
+			.title{
+				/*适配屏幕 用百分比*/
+				top: 0%;
+				bottom: 80%;
+				text-align: center;
+				font-size: 25px;
+				font-weight: bold;
+				padding-top: 10px;
+				box-sizing: border-box;
+			}
+			
+			.uname{
+				/*适配屏幕 用百分比*/
+				top: 20%;
+				bottom: 60%;
+				left: 10%;
+			}
+			
+			
+			
+			.pwd{
+				/*适配屏幕 用百分比*/
+				top: 40%;
+				bottom: 40%;
+				left: 10%;
+			}
+						
+			.log{
+				/*适配屏幕 用百分比*/
+				top: 60%;
+				bottom: 20%;
+				left: 10%;
+			}
+			
+			.tips{
+				/*适配屏幕 用百分比*/
+				top: 80%;
+				bottom: 0%;
+				font-size: 13px;
+				color: #AAAAAA;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="login">
+			<div class="title">
+				放哪儿
+			</div>
+			<div class="uname" >
+				<input type="text" class="un" name="userName"/>
+			</div>
+			<div class="pwd">
+				<input type="text" class="pa" name="password" />
+			</div>
+			<div class="log">
+				<button onclick="window.location.href='index.html'">注册</button>
+				<button onclick="window.location.href='index.html'">登录</button>
+			</div>
+			<div class="tips">
+				每一件物品都有它的去处
+			</div>
+		</div>
+	</body>
+</html>
